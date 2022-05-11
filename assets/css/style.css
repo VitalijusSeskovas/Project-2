@@ -23,3 +23,63 @@ box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
 0px 4px 22px 0 rgba(0, 0, 0, 0.21);
 transform: translate(-50%, -50%);
 }
+
+/* Start Button Styling */
+.startBtn button {
+    font-size: 35px;
+    font-weight: 400;
+    color: #504206;
+    padding: 25px 35px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.startBtn, .infoBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 9px 0 #5c5b5b,
+    0px 6px 25px 0 #8a8888;
+    transition: all 0.3s ease;
+}
+
+/* Content Quiz box styling */
+/* Making Content Quiz box hiden */
+.infoBox {
+    display: none;
+    width: 540px;
+    background: #ffedc6;
+    border-radius: 6px;
+    /*opacity: 0;*/
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.infoBox .infoTitle {
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #f7e68449;
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.infoBox .infoList {
+    padding: 15px 35px
+}
+
+.infoBox .infoList .info {
+    margin: 6px 0;
+    font-weight: 600;
+}
+
+.infoBox .infoList .info span {
+    font-weight: 600;
+    color: #f78a25e1;
+}
