@@ -15,7 +15,7 @@
     padding: 0;
 }
 
-.startBtn, .infoBox, .quizBox {
+.startBtn, .infoBox, .quizBox, .resultBox {
 position: absolute;
 top: 50%;
 left: 50%;
@@ -33,7 +33,7 @@ transform: translate(-50%, -50%);
     outline: none;
     border: none;
     border-radius: 6px;
-    background: #fff;
+    background: #ffedc6;
     cursor: pointer;
 }
 
@@ -86,7 +86,7 @@ transform: translate(-50%, -50%);
 
 /* Quiz box styling making, quiz box hiden*/
 .quizBox {
-    /*display: none;*/
+    display: none;
     width: 550px;
     background: #eee8b69f;
     border-radius: 5px;
@@ -253,7 +253,7 @@ footer .totalQue .sores p {
 
 /* Display none! */
 footer .nextBtn {
-    /* display: none;*/
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -272,3 +272,60 @@ footer .nextBtn:hover {
     background: #83bfff;
 }
 
+/* Result box styling */
+.resultBox {
+    background: #ffedc6;
+    width: 450px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.resultBox .icon {
+    font-size: 80px;
+    color: #6db036;
+    margin-bottom: 10px;
+}
+
+.resultBox .completeText {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.resultBox .scoreText {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.scoreText p {
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+.resultBox .buttons {
+    display: flex;
+    margin: 20px 0;
+}
+
+.resultBox .buttons button {
+    margin: 0 13px;
+    height: 35px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
